@@ -1,0 +1,66 @@
+/* Common styles for all screen sizes */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 2% auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 50%;
+}
+
+.task-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.task-description {
+    margin-top: 10px;
+}
+
+.btn-mod {
+    background-color: white;
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+}
+
+.edit {
+    color: green;
+}
+
+.delete {
+    color: red;
+}
+
+/* Responsive styles for specific screen sizes */
+
+/* For screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        width: 80%;
+        margin: 5% auto;
+        padding: 15px;
+    }
+    .btn-mod {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
+
+/* For screens with a maximum width of 480px */
+@media (max-width: 480px) {
+    .card-container {
+        width: 90%;
+        padding: 10px;
+    }
+    .btn-mod {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+}

@@ -1,0 +1,124 @@
+/* Common styles for all screen sizes */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    text-transform: uppercase;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+.btn {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn2 {
+    background-color: rgba(34, 201, 151, 0.726);
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    border: none;
+}
+
+.main-container,
+.task-container {
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    width: 40%;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+.text-area {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-login,
+.btn-register {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(34, 201, 151, 0.726);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.span {
+    margin-right: 10px;
+    margin-top: 10px;
+    color: rgb(10, 181, 255);
+    float: right;
+    cursor: pointer;
+}
+.backTotask{
+    color: rgba(34, 201, 151, 0.726);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/* Responsive styles for specific screen sizes */
+
+/* For screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 10px;
+    }
+    .btn {
+        font-size: 16px;
+    }
+}
+
+/* For screens with a maximum width of 480px */
+@media (max-width: 480px) {
+    .nav-container {
+        display: block;
+        text-align: center;
+    }
+    ul {
+        display: block;
+        margin-top: 10px;
+    }
+    li {
+        padding: 5px 0;
+    }
+}
